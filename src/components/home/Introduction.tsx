@@ -2,7 +2,9 @@ export default function Introduction() {
   return (
     <section id="about" className="py-24 bg-gray-900">
       <div className="max-w-4xl mx-auto px-6">
-        <h2 className="text-3xl font-bold text-white mb-12 text-center">About Me</h2>
+        <h2 className="text-3xl font-bold text-white mb-12 text-center">
+          About Me
+        </h2>
         <div className="flex flex-col md:flex-row gap-12 items-center">
           <div className="w-36 h-36 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 flex-shrink-0 flex items-center justify-center text-5xl select-none">
             👨‍💻
@@ -12,13 +14,11 @@ export default function Introduction() {
             <p className="text-gray-300 leading-relaxed text-lg">
               Webエンジニアを目指して日々勉強中。
               <br />
-              React・TypeScript を中心にフロントエンド開発を学んでいます。
-              <br />
-              作ったものを通じて誰かの役に立てたらうれしいです。
+              開発と寿司打とジャルジャルが好きです。腰を守りたいです。
             </p>
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }

@@ -1,7 +1,7 @@
 export default function WelcomeBoard() {
   const scrollToAbout = () => {
-    document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })
-  }
+    document.getElementById("about")?.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gray-950">
@@ -18,7 +18,7 @@ export default function WelcomeBoard() {
           </span>
         </h1>
         <p className="text-gray-400 text-lg md:text-xl max-w-md mx-auto leading-relaxed">
-          作ることが好き。コードを書くことが好き。
+          ようこそ。こんにちは。
         </p>
         <button
           onClick={scrollToAbout}
@@ -29,5 +29,5 @@ export default function WelcomeBoard() {
         </button>
       </div>
     </section>
-  )
+  );
 }
