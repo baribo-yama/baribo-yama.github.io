@@ -1,7 +1,3 @@
-import { unified } from 'unified'
-import remarkParse from 'remark-parse'
-import remarkHtml from 'remark-html'
-
 export interface Post {
   title: string
   date: string
@@ -18,25 +14,13 @@ async function loadArticles(): Promise<Post[]> {
 
   try {
     const response = await fetch('/articles.json')
-    const articles = await response.json()
-
-    for (const article of articles) {
-      const html = await markdownToHtml(article.content)
-      article.html = html
-    }
-
+    const articles = await response.json() as Post[]
     articlesCache = articles
     return articles
   } catch (error) {
     console.error('Failed to load articles:', error)
     return []
   }
-}
-
-async function markdownToHtml(markdown: string): Promise<string> {
-  const processor = unified().use(remarkParse).use(remarkHtml)
-  const html = await processor.process(markdown)
-  return String(html)
 }
 
 export async function getPosts(): Promise<Post[]> {
