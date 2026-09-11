@@ -7,7 +7,7 @@ export default function PostCard({ post }: { post: Post }) {
   return (
     <article
       onClick={() => navigate(`/blog/${post.slug}`)}
-      className="py-4 px-0 hover:opacity-70 transition-opacity cursor-pointer"
+      className="py-4 px-0 hover:opacity-70 transition-opacity cursor-pointer border-b border-gray-300 pb-4 mb-4 last:border-b-0"
     >
       <div className="flex flex-col gap-1">
         <time className="text-gray-500 text-sm">{post.date}</time>
