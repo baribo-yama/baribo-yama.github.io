@@ -25,14 +25,14 @@ export default function Works() {
   const [expandedId, setExpandedId] = useState<string | null>(null)
 
   return (
-    <section className="py-16 md:py-20 bg-white border-b border-gray-200">
+    <section className="py-16 md:py-20 bg-white border-b border-gray-300">
       <div className="max-w-5xl mx-auto px-4 md:px-8">
         <h2 className="text-2xl font-semibold text-gray-900 mb-12">Works</h2>
         <div className="grid md:grid-cols-2 gap-6">
           {works.map((work) => (
             <div
               key={work.title}
-              className="border border-gray-200 rounded p-6"
+              className="border border-gray-300 rounded p-6"
             >
               <h3 className="text-xl font-semibold text-gray-900 mb-2">
                 {work.title}
@@ -42,7 +42,7 @@ export default function Works() {
                 {work.tech.map((t) => (
                   <span
                     key={t}
-                    className="text-xs bg-gray-100 text-gray-700 px-2 py-1 border border-gray-200 rounded"
+                    className="text-xs bg-gray-100 text-gray-700 px-2 py-1 border border-gray-300 rounded"
                   >
                     {t}
                   </span>
@@ -82,7 +82,7 @@ export default function Works() {
                 </span>
               </button>
               {expandedId === work.title && (
-                <div className="mt-4 pt-4 border-t border-gray-200 space-y-4">
+                <div className="mt-4 pt-4 border-t border-gray-300 space-y-4">
                   <div>
                     <h4 className="text-sm font-semibold text-gray-900 mb-2">制作の背景</h4>
                     <p className="text-sm text-gray-600 leading-relaxed">{work.background}</p>

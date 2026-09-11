@@ -1,6 +1,6 @@
 export default function Introduction() {
   return (
-    <section id="about" className="py-16 md:py-20 bg-white border-b border-gray-200">
+    <section id="about" className="py-16 md:py-20 bg-white border-b border-gray-300">
       <div className="max-w-3xl mx-auto px-4 md:px-8">
         <h2 className="text-2xl font-semibold text-gray-900 mb-8">
           About Me
