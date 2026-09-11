@@ -1,48 +1,99 @@
+import { useState } from 'react'
+
 type Work = {
   title: string
-  description: string
+  summary: string
+  background: string
+  responsibility: string
   tech: string[]
-  url: string
+  github?: string
+  url?: string
 }
 
 const works: Work[] = [
   {
     title: 'Portfolio Blog',
-    description: 'このサイト。React + TypeScript + Vite + Tailwind CSS で構築したポートフォリオサイト。',
+    summary: 'このサイト。React + TypeScript + Vite + Tailwind CSS で構築したポートフォリオサイト。',
+    background: 'エンジニア志望者として、バックエンドの視点を持ったポートフォリオを構築したいと考え、Markdown記事管理とビルド時SSG化を実装。',
+    responsibility: 'フロントエンド全般、ビルドパイプライン設計、記事管理システム',
     tech: ['React', 'TypeScript', 'Vite', 'Tailwind CSS'],
-    url: 'https://github.com/baribo-yama/portfolio_blog',
+    github: 'https://github.com/baribo-yama/portfolio_blog',
   },
 ]
 
 export default function Works() {
+  const [expandedId, setExpandedId] = useState<string | null>(null)
+
   return (
-    <section className="py-24 bg-gray-900">
-      <div className="max-w-4xl mx-auto px-6">
-        <h2 className="text-3xl font-bold text-white mb-12 text-center">Works</h2>
+    <section className="py-16 md:py-20 bg-white border-b border-gray-200">
+      <div className="max-w-5xl mx-auto px-4 md:px-8">
+        <h2 className="text-2xl font-semibold text-gray-900 mb-12">Works</h2>
         <div className="grid md:grid-cols-2 gap-6">
           {works.map((work) => (
-            <a
+            <div
               key={work.title}
-              href={work.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-blue-500 transition-colors group"
+              className="border border-gray-200 rounded p-6"
             >
-              <h3 className="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">
                 {work.title}
               </h3>
-              <p className="text-gray-400 text-sm mb-4 leading-relaxed">{work.description}</p>
-              <div className="flex flex-wrap gap-2">
+              <p className="text-gray-600 text-sm mb-4 leading-relaxed">{work.summary}</p>
+              <div className="flex flex-wrap gap-2 mb-4">
                 {work.tech.map((t) => (
                   <span
                     key={t}
-                    className="text-xs bg-blue-900/50 text-blue-300 px-2 py-1 rounded"
+                    className="text-xs bg-gray-100 text-gray-700 px-2 py-1 border border-gray-200 rounded"
                   >
                     {t}
                   </span>
                 ))}
               </div>
-            </a>
+              <div className="flex gap-3 mb-4">
+                {work.github && (
+                  <a
+                    href={work.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-gray-600 hover:text-gray-900 transition-colors"
+                    title="GitHub"
+                  >
+                    GitHub
+                  </a>
+                )}
+                {work.url && (
+                  <a
+                    href={work.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-gray-600 hover:text-gray-900 transition-colors"
+                    title="Deploy"
+                  >
+                    Deploy
+                  </a>
+                )}
+              </div>
+              <button
+                onClick={() => setExpandedId(expandedId === work.title ? null : work.title)}
+                className="text-sm text-gray-600 hover:text-gray-900 transition-colors flex items-center gap-1"
+              >
+                {expandedId === work.title ? 'もっと隠す' : 'もっと見る'}
+                <span className={`transform transition-transform ${expandedId === work.title ? 'rotate-180' : ''}`}>
+                  v
+                </span>
+              </button>
+              {expandedId === work.title && (
+                <div className="mt-4 pt-4 border-t border-gray-200 space-y-4">
+                  <div>
+                    <h4 className="text-sm font-semibold text-gray-900 mb-2">制作の背景</h4>
+                    <p className="text-sm text-gray-600 leading-relaxed">{work.background}</p>
+                  </div>
+                  <div>
+                    <h4 className="text-sm font-semibold text-gray-900 mb-2">担当箇所</h4>
+                    <p className="text-sm text-gray-600 leading-relaxed">{work.responsibility}</p>
+                  </div>
+                </div>
+              )}
+            </div>
           ))}
         </div>
       </div>

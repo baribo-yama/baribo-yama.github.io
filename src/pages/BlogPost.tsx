@@ -23,36 +23,37 @@ export default function BlogPost() {
 
   if (loading) {
     return (
-      <div className="max-w-4xl mx-auto px-6 py-16">
-        <div className="text-gray-400">記事を読み込み中...</div>
+      <div className="max-w-3xl mx-auto px-4 md:px-8 py-16">
+        <div className="text-gray-500">記事を読み込み中...</div>
       </div>
     )
   }
 
   if (!post) {
     return (
-      <div className="max-w-4xl mx-auto px-6 py-16">
-        <div className="text-gray-400">記事が見つかりません</div>
+      <div className="max-w-3xl mx-auto px-4 md:px-8 py-16">
+        <div className="text-gray-500">記事が見つかりません</div>
       </div>
     )
   }
 
   return (
-    <div className="max-w-4xl mx-auto px-6 py-16">
+    <div className="max-w-3xl mx-auto px-4 md:px-8 py-16">
       <button
         onClick={() => navigate('/blog')}
-        className="mb-8 text-blue-400 hover:text-blue-300 transition-colors"
+        className="mb-8 text-gray-600 hover:text-gray-900 transition-colors text-sm"
       >
         ← 記事一覧に戻る
       </button>
 
-      <article className="prose prose-invert max-w-none">
-        <h1 className="text-4xl font-bold text-white mb-4">{post.title}</h1>
-        <time className="text-blue-400 text-sm font-mono mb-8 block">{post.date}</time>
+      <article>
+        <h1 className="text-3xl font-bold text-gray-900 mb-4">{post.title}</h1>
+        <time className="text-gray-500 text-sm mb-8 block">{post.date}</time>
 
-        <div className="text-gray-300 leading-relaxed whitespace-pre-wrap">
-          {post.content}
-        </div>
+        <div
+          className="prose prose-sm max-w-none text-gray-600 leading-relaxed space-y-4"
+          dangerouslySetInnerHTML={{ __html: post.html }}
+        />
       </article>
     </div>
   )

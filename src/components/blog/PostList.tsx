@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
-import PostCard, { type Post } from './PostCard'
-import { getPosts } from '../../utils/posts'
+import PostCard from './PostCard'
+import { getPosts, type Post } from '../../utils/posts'
 
 export default function PostList() {
   const [posts, setPosts] = useState<Post[]>([])
@@ -14,15 +14,15 @@ export default function PostList() {
   }, [])
 
   if (loading) {
-    return <div className="text-gray-400">記事を読み込み中...</div>
+    return <div className="text-gray-500">記事を読み込み中...</div>
   }
 
   if (posts.length === 0) {
-    return <div className="text-gray-400">記事はまだありません</div>
+    return <div className="text-gray-500">記事はまだありません</div>
   }
 
   return (
-    <div className="flex flex-col gap-4">
+    <div className="space-y-1 divide-y divide-gray-200">
       {posts.map((post) => (
         <PostCard key={post.slug} post={post} />
       ))}

@@ -1,30 +1,42 @@
-const skills = [
-  { name: 'React', level: 3 },
-  { name: 'TypeScript', level: 2 },
-  { name: 'Vite', level: 2 },
-  { name: 'Tailwind CSS', level: 3 },
-  { name: 'HTML / CSS', level: 3 },
-  { name: 'Git / GitHub', level: 2 },
+type SkillCategory = {
+  category: string
+  items: string[]
+}
+
+const skillCategories: SkillCategory[] = [
+  {
+    category: '言語',
+    items: ['TypeScript', 'HTML / CSS', 'JavaScript'],
+  },
+  {
+    category: 'フレームワーク',
+    items: ['React', 'Tailwind CSS'],
+  },
+  {
+    category: 'ツール・インフラ',
+    items: ['Vite', 'Git / GitHub', 'npm'],
+  },
 ]
 
 export default function Skills() {
   return (
-    <section className="py-24 bg-gray-950">
-      <div className="max-w-4xl mx-auto px-6">
-        <h2 className="text-3xl font-bold text-white mb-12 text-center">Skills</h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-          {skills.map((skill) => (
-            <div
-              key={skill.name}
-              className="bg-gray-800 rounded-xl p-5 border border-gray-700 hover:border-blue-500 transition-colors"
-            >
-              <p className="text-white font-medium mb-3">{skill.name}</p>
-              <div className="flex gap-1">
-                {Array.from({ length: 5 }).map((_, i) => (
-                  <div
-                    key={i}
-                    className={`h-1.5 flex-1 rounded-full ${i < skill.level ? 'bg-blue-500' : 'bg-gray-600'}`}
-                  />
+    <section className="py-16 md:py-20 bg-white border-b border-gray-200">
+      <div className="max-w-3xl mx-auto px-4 md:px-8">
+        <h2 className="text-2xl font-semibold text-gray-900 mb-10">Skills</h2>
+        <div className="space-y-8">
+          {skillCategories.map((category) => (
+            <div key={category.category}>
+              <h3 className="text-sm font-semibold text-gray-600 uppercase tracking-widest mb-4">
+                {category.category}
+              </h3>
+              <div className="flex flex-wrap gap-3">
+                {category.items.map((skill) => (
+                  <span
+                    key={skill}
+                    className="inline-block border border-gray-300 text-gray-700 px-3 py-1 text-sm rounded"
+                  >
+                    {skill}
+                  </span>
                 ))}
               </div>
             </div>

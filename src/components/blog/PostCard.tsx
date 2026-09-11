@@ -1,10 +1,5 @@
 import { useNavigate } from 'react-router-dom'
-
-export type Post = {
-  title: string
-  date: string
-  slug: string
-}
+import { type Post } from '../../utils/posts'
 
 export default function PostCard({ post }: { post: Post }) {
   const navigate = useNavigate()
@@ -12,10 +7,24 @@ export default function PostCard({ post }: { post: Post }) {
   return (
     <article
       onClick={() => navigate(`/blog/${post.slug}`)}
-      className="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-blue-500 transition-colors cursor-pointer"
+      className="py-4 px-0 hover:opacity-70 transition-opacity cursor-pointer"
     >
-      <time className="text-blue-400 text-sm font-mono">{post.date}</time>
-      <h2 className="text-xl font-bold text-white mt-2 mb-3">{post.title}</h2>
+      <div className="flex flex-col gap-1">
+        <time className="text-gray-500 text-sm">{post.date}</time>
+        <h2 className="text-base font-medium text-gray-900">{post.title}</h2>
+        {post.tags && post.tags.length > 0 && (
+          <div className="flex flex-wrap gap-2 pt-1">
+            {post.tags.map((tag) => (
+              <span
+                key={tag}
+                className="text-xs bg-gray-100 text-gray-600 px-2 py-0.5 rounded"
+              >
+                {tag}
+              </span>
+            ))}
+          </div>
+        )}
+      </div>
     </article>
   )
 }

@@ -8,9 +8,9 @@ import BlogPost from './pages/BlogPost'
 function App() {
   return (
     <HashRouter>
-      <div className="flex flex-col min-h-screen bg-gray-950 text-white">
+      <div className="flex flex-col min-h-screen bg-white text-gray-900">
         <Header />
-        <main className="flex-1">
+        <main className="flex-1 pt-14">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/blog" element={<Blog />} />

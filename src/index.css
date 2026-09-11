@@ -13,3 +13,51 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Markdown styles */
+.prose h1,
+.prose h2,
+.prose h3 {
+  @apply font-semibold text-gray-900 mt-6 mb-4;
+}
+
+.prose h1 {
+  @apply text-2xl;
+}
+
+.prose h2 {
+  @apply text-xl;
+}
+
+.prose h3 {
+  @apply text-lg;
+}
+
+.prose p {
+  @apply text-gray-600 leading-relaxed mb-4;
+}
+
+.prose ul,
+.prose ol {
+  @apply text-gray-600 leading-relaxed mb-4 ml-6;
+}
+
+.prose li {
+  @apply mb-2;
+}
+
+.prose a {
+  @apply text-gray-900 underline hover:opacity-70 transition-opacity;
+}
+
+.prose code {
+  @apply bg-gray-100 text-gray-800 rounded px-1 py-0.5 text-sm;
+}
+
+.prose pre {
+  @apply bg-gray-900 text-gray-100 rounded p-4 overflow-x-auto mb-4;
+}
+
+.prose pre code {
+  @apply bg-transparent text-inherit rounded-none px-0 py-0;
+}

@@ -4,25 +4,20 @@ export default function WelcomeBoard() {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gray-950">
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 via-transparent to-purple-900/20 pointer-events-none" />
-      <div className="relative z-10 text-center px-6">
-        <p className="text-blue-400 text-xs font-mono tracking-[0.3em] uppercase mb-6">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-white">
+      <div className="relative z-10 text-center px-4 md:px-6">
+        <p className="text-gray-500 text-xs font-medium tracking-widest uppercase mb-6">
           Welcome to my portfolio
         </p>
-        <h1 className="text-6xl md:text-8xl font-black text-white mb-6 leading-tight">
-          Creative
-          <br />
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">
-            Developer
-          </span>
+        <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+          baribo-yama
         </h1>
-        <p className="text-gray-400 text-lg md:text-xl max-w-md mx-auto leading-relaxed">
-          ようこそ。こんにちは。
+        <p className="text-gray-600 text-lg md:text-lg max-w-md mx-auto leading-relaxed">
+          Webエンジニアを目指して日々勉強中
         </p>
         <button
           onClick={scrollToAbout}
-          className="mt-12 inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white px-8 py-3 rounded-full font-medium transition-colors cursor-pointer"
+          className="mt-12 inline-flex items-center gap-2 bg-gray-900 hover:opacity-80 text-white px-6 py-2 font-medium transition-opacity cursor-pointer"
         >
           詳しく見る
           <span>↓</span>
