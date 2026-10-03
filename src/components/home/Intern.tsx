@@ -1,15 +1,7 @@
-type InternData = {
-  company: string
-  description: string
-  logo?: string
-}
+import type { Internship } from '../../types/profile'
+import internshipsData from '../../data/internships.json'
 
-const internships: InternData[] = [
-  {
-    company: 'Tech Company A',
-    description: 'Webアプリケーション開発インターンシップ。フロントエンド・バックエンド双方の技術スタックを経験',
-  },
-]
+const internships: Internship[] = internshipsData
 
 export default function Intern() {
   return (

@@ -1,0 +1,34 @@
+[
+  {
+    "category": "言語",
+    "items": [
+      { "name": "TypeScript" },
+      { "name": "HTML / CSS" },
+      { "name": "JavaScript" },
+      { "name": "PHP" },
+      { "name": "Python" },
+      { "name": "Kotlin" }
+    ]
+  },
+  {
+    "category": "フレームワーク",
+    "items": [
+      { "name": "React" },
+      { "name": "Tailwind CSS" },
+      { "name": "Laravel" },
+      { "name": "Flask" },
+      { "name": "FastAPI" },
+      { "name": "Ktor" }
+    ]
+  },
+  {
+    "category": "ツール・インフラ",
+    "items": [
+      { "name": "Vite" },
+      { "name": "Git / GitHub" },
+      { "name": "npm" },
+      { "name": "MySQL" },
+      { "name": "PostgreSQL" }
+    ]
+  }
+]

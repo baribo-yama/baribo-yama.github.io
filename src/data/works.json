@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Portfolio Blog",
+    "summary": "このサイト。React + TypeScript + Vite + Tailwind CSS で構築したポートフォリオサイト。",
+    "background": "エンジニア志望者として、バックエンドの視点を持ったポートフォリオを構築したいと考え、Markdown記事管理とビルド時SSG化を実装。",
+    "responsibility": "フロントエンド全般、ビルドパイプライン設計、記事管理システム",
+    "tech": ["React", "TypeScript", "Vite", "Tailwind CSS"],
+    "github": "https://github.com/baribo-yama/portfolio_blog"
+  },
+  {
+    "title": "Portfolio Blog",
+    "summary": "このサイト。React + TypeScript + Vite + Tailwind CSS で構築したポートフォリオサイト。",
+    "background": "エンジニア志望者として、バックエンドの視点を持ったポートフォリオを構築したいと考え、Markdown記事管理とビルド時SSG化を実装。",
+    "responsibility": "フロントエンド全般、ビルドパイプライン設計、記事管理システム",
+    "tech": ["React", "TypeScript", "Vite", "Tailwind CSS"],
+    "github": "https://github.com/baribo-yama/portfolio_blog"
+  },
+  {
+    "title": "Raqoo",
+    "image": "/images/works/raqooイメージ.png",
+    "summary": "学校の教室予約のフローを従来の手作業から、アプリでの運用に変えました",
+    "background": "あああ",
+    "responsibility": "チームリーダー、バックエンド、インフラ、フロント（少し）",
+    "tech": [
+      "Laravel",
+      "Blade",
+      "HTML",
+      "JavaScript",
+      "Tailwind CSS",
+      "MariaDB",
+      "さくらVPS"
+    ]
+  },
+  {
+    "title": "MOKU",
+    "image": "/images/works/mokuホーム画面.png",
+    "summary": "あああ",
+    "background": "あああ",
+    "responsibility": "あああ",
+    "tech": ["Firebase", "React", "JavaScript", "FireStore", "LiveKitCloud"]
+  }
+]

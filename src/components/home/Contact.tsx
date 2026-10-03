@@ -13,8 +13,9 @@ export default function Contact() {
           >
             GitHub
           </a>
+          <a href="https://x.com/gu_develop551?s=11">X</a>
         </div>
       </div>
     </section>
-  )
+  );
 }

@@ -1,22 +1,8 @@
-type SkillCategory = {
-  category: string
-  items: string[]
-}
+import type { SkillCategory } from '../../types/profile'
+import skillsData from '../../data/skills.json'
+import { assetUrl } from '../../utils/asset'
 
-const skillCategories: SkillCategory[] = [
-  {
-    category: '言語',
-    items: ['TypeScript', 'HTML / CSS', 'JavaScript'],
-  },
-  {
-    category: 'フレームワーク',
-    items: ['React', 'Tailwind CSS'],
-  },
-  {
-    category: 'ツール・インフラ',
-    items: ['Vite', 'Git / GitHub', 'npm'],
-  },
-]
+const skillCategories: SkillCategory[] = skillsData
 
 export default function Skills() {
   return (
@@ -30,12 +16,15 @@ export default function Skills() {
                 {category.category}
               </h3>
               <div className="flex flex-wrap gap-3">
-                {category.items.map((skill) => (
+                {category.items.map((skill, index) => (
                   <span
-                    key={skill}
-                    className="inline-block border border-gray-400 text-gray-700 px-3 py-1 text-sm rounded"
+                    key={index}
+                    className="inline-flex items-center gap-2 border border-gray-400 text-gray-700 px-3 py-1 text-sm rounded"
                   >
-                    {skill}
+                    {skill.image && (
+                      <img src={assetUrl(skill.image)} alt="" className="w-4 h-4 object-contain" />
+                    )}
+                    {skill.name}
                   </span>
                 ))}
               </div>
