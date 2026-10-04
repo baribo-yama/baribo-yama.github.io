@@ -1,17 +1,47 @@
 [
   {
-    "period": "2025.05 - 現在",
-    "title": "Webエンジニア志望",
-    "description": "React・TypeScriptでのフロントエンド開発及び、バックエンド視点でのシステム設計を学習中"
+    "period": "2026.09",
+    "title": "Sansan就業サマーインターンに参加",
+    "description": "billoneの機能追加を経験。"
+  },
+  {
+    "period": "2026.08",
+    "title": "PLAYサマーインターンに参加",
+    "description": "3daysで動画配信アプリの開発を経験。"
+  },
+  {
+    "period": "2026.08",
+    "title": "SmartHRサマーインターンに参加",
+    "description": "5daysでアジャイル開発を経験。ベストオーディエンス賞を獲得。"
+  },
+  {
+    "period": "2025.10 - 2026.7",
+    "title": "教室予約管理アプリRaqooを開発",
+    "description": "学校のアナログな予約フローをアプリにして運用"
+  },
+  {
+    "period": "2025.08 - 2025.09",
+    "title": "東京大学主催100プログラムに参加",
+    "description": "ベストインタビュー賞を獲得"
+  },
+  {
+    "period": "2025.07",
+    "title": "AIハッカソンに参加",
+    "description": ""
+  },
+  {
+    "period": "2025.2",
+    "title": "美唄ハッカソンに参加",
+    "description": "ハッカソンの楽しさに目覚める"
+  },
+  {
+    "period": "2024.12",
+    "title": "株式会社dottで長期インターン開始",
+    "description": "イベントで使用するアプリ開発のフロントとして働く。"
   },
   {
     "period": "2024.04",
-    "title": "大学入学",
-    "description": "プログラミングの基礎から学習開始"
-  },
-  {
-    "period": "2024.04",
-    "title": "大学入学",
+    "title": "札幌デザイン＆テクノロジー専門学校入学",
     "description": "プログラミングの基礎から学習開始"
   }
 ]

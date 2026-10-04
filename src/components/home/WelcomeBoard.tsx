@@ -1,10 +1,26 @@
+import { assetUrl } from "../../utils/asset";
+
+// public/ 配下からの相対パス　undefinedにすると白背景
+const backgroundImage: string | undefined =
+  "/images/welcome/けーちゃん横長.jpg";
+
 export default function WelcomeBoard() {
   const scrollToAbout = () => {
     document.getElementById("about")?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-white">
+    <section
+      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-white"
+      style={
+        backgroundImage
+          ? { backgroundImage: `url(${assetUrl(backgroundImage)})` }
+          : undefined
+      }
+    >
+      {/* 画像上でも本文を読めるよう半透明の白を重ねる */}
+      {backgroundImage && <div className="absolute inset-0 bg-white/70" />}
+
       <div className="relative z-10 text-center px-4 md:px-6">
         <p className="text-gray-500 text-xs font-medium tracking-widest uppercase mb-6">
           Welcome to my portfolio
