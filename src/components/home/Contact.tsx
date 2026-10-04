@@ -2,7 +2,7 @@ export default function Contact() {
   return (
     <section className="py-16 md:py-20 bg-white">
       <div className="max-w-3xl mx-auto px-4 md:px-8 text-center">
-        <h2 className="text-2xl font-semibold text-gray-900 mb-4">Contact</h2>
+        <h2 className="text-2xl font-semibold text-gray-900 mb-4">SNS</h2>
         <p className="text-gray-600 mb-8">お気軽にご連絡ください。</p>
         <div className="flex flex-col sm:flex-row gap-6 justify-center">
           <a
@@ -14,6 +14,7 @@ export default function Contact() {
             GitHub
           </a>
           <a href="https://x.com/gu_develop551?s=11">X</a>
+          <a href="https://qiita.com/bariboyama">qiita</a>
         </div>
       </div>
     </section>

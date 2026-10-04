@@ -93,6 +93,7 @@ export default function Works() {
                     v
                   </span>
                 </button>
+                {/* 「もっと見る」が押されたと */}
                 {isOpen && (
                   <div className="mt-4 pt-4 border-t border-gray-400 space-y-4">
                     <div>
@@ -109,6 +110,14 @@ export default function Works() {
                       </h4>
                       <p className="text-sm text-gray-600 leading-relaxed">
                         {work.responsibility}
+                      </p>
+                    </div>
+                    <div>
+                      <h4 className="text-sm font-semibold text-gray-900 mb-2">
+                        工夫ポイント
+                      </h4>
+                      <p className="text-sm text-gray-600 leading-relaxed">
+                        {work.ingenuity}
                       </p>
                     </div>
                   </div>

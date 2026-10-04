@@ -4,22 +4,33 @@
     "summary": "このサイト。React + TypeScript + Vite + Tailwind CSS で構築したポートフォリオサイト。",
     "background": "エンジニア志望者として、バックエンドの視点を持ったポートフォリオを構築したいと考え、Markdown記事管理とビルド時SSG化を実装。",
     "responsibility": "フロントエンド全般、ビルドパイプライン設計、記事管理システム",
+    "ingenuity": "",
     "tech": ["React", "TypeScript", "Vite", "Tailwind CSS"],
     "github": "https://github.com/baribo-yama/portfolio_blog"
   },
   {
-    "title": "Portfolio Blog",
-    "summary": "このサイト。React + TypeScript + Vite + Tailwind CSS で構築したポートフォリオサイト。",
-    "background": "エンジニア志望者として、バックエンドの視点を持ったポートフォリオを構築したいと考え、Markdown記事管理とビルド時SSG化を実装。",
-    "responsibility": "フロントエンド全般、ビルドパイプライン設計、記事管理システム",
-    "tech": ["React", "TypeScript", "Vite", "Tailwind CSS"],
-    "github": "https://github.com/baribo-yama/portfolio_blog"
+    "title": "いらすとや風おじいちゃん・おばあちゃん画像ジェネレーター",
+    "image": "/images/works/bayasupe.png",
+    "summary": "いらすとや風のおじいちゃんとおばあちゃんの画像を生成させることだけに特化した画像生成アプリ",
+    "background": "画像生成モデルを使った開発にチャレンジするため、stablediffusionモデルを使用し、そこに200~300枚のいらすとやのおじいちゃんおばあちゃんの画像を使用してファインチューニングを行った。いらすとやの画像を使用した理由は著作権フリーという安心感のため。おじいちゃん、おばあちゃんに絞った理由は特徴量を絞り、できるだけ少ない画像データセットでいらすとやっぽさを表現するため。",
+    "ingenuity": "GPUリソース確保のためにGoogle Colabで実行した生成処理をngrok経由でフロントに返す構成を整え、対象カテゴリの特化や画像の反転・回転によるデータ拡張で効率的にデータセットを構築した上で、画像表示と英文入力フォームを連動させてアノテーション結果を自動でCSV出力・保存するPythonスクリプトを自作することで作業コストを大幅に削減した。",
+    "responsibility": "チームリーダー、バックエンド",
+    "tech": [
+      "Flask",
+      "Python",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Google Colab（GPU利用のため）"
+    ],
+    "github": "https://github.com/baribo-yama/stamp_generator"
   },
   {
     "title": "Raqoo",
     "image": "/images/works/raqooイメージ.png",
     "summary": "学校の教室予約のフローを従来の手作業から、アプリでの運用に変えました",
     "background": "あああ",
+    "ingenuity": "",
     "responsibility": "チームリーダー、バックエンド、インフラ、フロント（少し）",
     "tech": [
       "Laravel",
@@ -29,14 +40,17 @@
       "Tailwind CSS",
       "MariaDB",
       "さくらVPS"
-    ]
+    ],
+    "github": "https://github.com/baribo-yama/raqoo"
   },
   {
     "title": "MOKU",
     "image": "/images/works/mokuホーム画面.png",
     "summary": "あああ",
     "background": "あああ",
+    "ingenuity": "",
     "responsibility": "あああ",
-    "tech": ["Firebase", "React", "JavaScript", "FireStore", "LiveKitCloud"]
+    "tech": ["Firebase", "React", "JavaScript", "FireStore", "LiveKitCloud"],
+    "github": "https://github.com/baribo-yama/online_workspace"
   }
 ]
