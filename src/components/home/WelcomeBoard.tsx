@@ -2,7 +2,7 @@ import { assetUrl } from "../../utils/asset";
 
 // public/ 配下からの相対パス　undefinedにすると白背景
 const backgroundImage: string | undefined =
-  "/images/welcome/けーちゃん横長.jpg";
+  "/images/welcome/けーちゃん抱きかかえ16-9.jpg";
 
 export default function WelcomeBoard() {
   const scrollToAbout = () => {
