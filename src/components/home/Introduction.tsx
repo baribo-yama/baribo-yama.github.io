@@ -8,10 +8,10 @@ export default function Introduction() {
         <h2 className="text-2xl font-semibold text-gray-900 mb-8">About Me</h2>
         <div className="space-y-4 text-gray-600 leading-relaxed">
           <p>Webのサーバーサイドエンジニアを目指して日々勉強中。</p>
-          <p>開発、寿司打、猫、ジャルジャルが好きです。</p>
+          <p>開発、寿司打、猫、obsidian、ジャルジャルが好きです。</p>
           <p>美味しいものを食べに行きたいです。</p>
           <p>
-            ブログも少しずつ更新したいなーと思ってます（ヘッダーからアクセス）
+            ブログも少しずつ更新したいなーと思ってます（ヘッダーからアクセスできます）。
           </p>
         </div>
       </div>
