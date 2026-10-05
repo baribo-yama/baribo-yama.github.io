@@ -127,6 +127,14 @@ export default function Works() {
                         {work.ingenuity}
                       </p>
                     </div>
+                    <div>
+                      <h4 className="text-sm font-semibold text-gray-900 mb-2">
+                        成果
+                      </h4>
+                      <p className="text-sm text-gray-600 leading-relaxed">
+                        {work.result}
+                      </p>
+                    </div>
                   </div>
                 )}
               </div>
