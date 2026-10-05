@@ -9,15 +9,18 @@ export type Work = {
   responsibility: string;
   tech: string[];
   ingenuity: string;
+  result?: string;
   image?: string;
   github?: string;
   url?: string;
+  new?: boolean;
 };
 
 export type HistoryItem = {
   period: string;
   title: string;
   description: string;
+  new?: boolean;
 };
 
 export type Skill = {

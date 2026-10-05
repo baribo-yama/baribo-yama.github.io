@@ -56,3 +56,17 @@ src/
 ├── App.tsx                   # ルーティング
 ├── index.tsx
 └── index.css
+
+## カラーパレット
+さるわかのカラーパレット参照する
+[サルワカ](https://saruwakakun.com/)
+- #f0ebeb
+	- グレインっぽい灰色
+	- ベースカラー
+- #f1a590
+	- 淡いオレンジ
+	- ワンポイントで色をつける
+	- works, header, bariboyama, などの項目のカラーに使うと良さそう
+- #fff
+
+## フォント

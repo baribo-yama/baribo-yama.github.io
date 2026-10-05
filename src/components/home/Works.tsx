@@ -1,3 +1,5 @@
+import SectionTitle from "../common/SectionTitle";
+import NewBadge from "../common/NewBadge";
 import { useState } from "react";
 import type { Work } from "../../types/profile";
 import worksData from "../../data/works.json";
@@ -23,19 +25,23 @@ export default function Works() {
   };
 
   return (
-    <section className="py-16 md:py-20 bg-white border-b border-gray-400">
+    <section className="py-16 md:py-20 bg-base border-b border-gray-400">
       <div className="max-w-3xl mx-auto px-4 md:px-8">
-        <h2 className="text-2xl font-semibold text-gray-900 mb-10">Works</h2>
+        <SectionTitle>Works</SectionTitle>
         <div className="space-y-4">
           {works.map((work, index) => {
             const isOpen = expanded.has(index);
+            {
+              /* 各worksのカード */
+            }
             return (
               <div
                 key={index}
-                className="border border-gray-400 rounded p-6 shadow-sm hover:shadow-md transition-shadow"
+                className="bg-white  rounded-md p-6 shadow-sm hover:shadow-lg transition-shadow"
               >
-                <h3 className="text-base font-semibold text-gray-900 mb-2">
+                <h3 className="text-base font-semibold text-gray-900 mb-2 flex items-center gap-2">
                   {work.title}
+                  {work.new && <NewBadge />}
                 </h3>
                 <p className="text-gray-600 text-sm mb-4 leading-relaxed">
                   {work.summary}
@@ -90,10 +96,11 @@ export default function Works() {
                   <span
                     className={`transform transition-transform ${isOpen ? "rotate-180" : ""}`}
                   >
-                    v
+                    ▼
                   </span>
                 </button>
-                {/* 「もっと見る」が押されたと */}
+
+                {/* 「もっと見る」が押されたとき */}
                 {isOpen && (
                   <div className="mt-4 pt-4 border-t border-gray-400 space-y-4">
                     <div>
@@ -118,6 +125,14 @@ export default function Works() {
                       </h4>
                       <p className="text-sm text-gray-600 leading-relaxed">
                         {work.ingenuity}
+                      </p>
+                    </div>
+                    <div>
+                      <h4 className="text-sm font-semibold text-gray-900 mb-2">
+                        成果
+                      </h4>
+                      <p className="text-sm text-gray-600 leading-relaxed">
+                        {work.result}
                       </p>
                     </div>
                   </div>

@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+@theme {
+  --color-accent: #FF9F7D;
+  --color-emphasis: #f89174;
+  --color-base: #f0ebeb;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
