@@ -12,12 +12,14 @@ export type Work = {
   image?: string;
   github?: string;
   url?: string;
+  new?: boolean;
 };
 
 export type HistoryItem = {
   period: string;
   title: string;
   description: string;
+  new?: boolean;
 };
 
 export type Skill = {

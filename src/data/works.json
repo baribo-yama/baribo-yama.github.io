@@ -1,6 +1,7 @@
 [
   {
     "title": "Portfolio Blog",
+    "new": false,
     "summary": "このサイト。React + TypeScript + Vite + Tailwind CSS で構築したポートフォリオサイト。",
     "background": "エンジニア志望者として、バックエンドの視点を持ったポートフォリオを構築したいと考え、Markdown記事管理とビルド時SSG化を実装。",
     "responsibility": "フロントエンド全般、ビルドパイプライン設計、記事管理システム",
@@ -25,8 +26,20 @@
     ],
     "github": "https://github.com/baribo-yama/stamp_generator"
   },
+
+  {
+    "title": "MOKU",
+    "image": "/images/works/mokuホーム画面.png",
+    "summary": "オンラインでのもくもく会を行いやすくするウェブアプリ",
+    "background": "東京大学主催の100プログラム8期にて開発。従来のもくもく会（作業会）には、会話の過熱や過集中による燃え尽きといった自己管理の難しさに加え、既存ツールの分散や事前情報の不透明さによる参加への心理的ハードルの高さという課題を解決するために開発した。",
+    "ingenuity": "ルーム作成機能を通じて開催中の作業会タイトル、参加者名、参加人数を一覧表示し、透明性を確保することで、目的の近いユーザー同士が自然に集まる設計とした。また、ルーム内には参加者全員で同期するポモドーロタイマーを導入し、適切なペース配分とメリハリのある集中・休憩サイクルを実現した。さらに、休憩時間には会話トピックを表示する機能を備え、参加者同士の自然な交流を促す仕組みを取り入れている。2ヶ月間で20名以上へのインタビューと即座の改善を重ねる高速なPDCAが評価されて優秀インタビュー賞を受賞したほか、技術面ではLiveKit Cloudの不具合に対しReactのレンダリング順序調整や海外開発者への直接問い合わせを経て完遂し、大学でのテスト運用（10名利用・収益5000円）を通じて特定の要望に応えすぎると独自性が損なわれるという教訓を得るなど、ユーザー課題を形にして改善し続ける貴重な成長機会となった。",
+    "responsibility": "バックエンド、フロントエンド",
+    "tech": ["Firebase", "React", "JavaScript", "FireStore", "LiveKitCloud"],
+    "github": "https://github.com/baribo-yama/online_workspace"
+  },
   {
     "title": "Raqoo",
+    "new": true,
     "image": "/images/works/raqooイメージ.png",
     "summary": "学校の教室予約のフローを従来の手作業から、アプリでの運用に変えました",
     "background": "あああ",
@@ -42,15 +55,5 @@
       "さくらVPS"
     ],
     "github": "https://github.com/baribo-yama/raqoo"
-  },
-  {
-    "title": "MOKU",
-    "image": "/images/works/mokuホーム画面.png",
-    "summary": "あああ",
-    "background": "あああ",
-    "ingenuity": "",
-    "responsibility": "あああ",
-    "tech": ["Firebase", "React", "JavaScript", "FireStore", "LiveKitCloud"],
-    "github": "https://github.com/baribo-yama/online_workspace"
   }
 ]

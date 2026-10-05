@@ -14,8 +14,22 @@ export default function Contact() {
           >
             GitHub
           </a>
-          <a href="https://x.com/gu_develop551?s=11">X</a>
-          <a href="https://qiita.com/bariboyama">qiita</a>
+          <a
+            href="https://x.com/gu_develop551?s=11"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-600 hover:text-gray-900 transition-colors text-sm font-medium"
+          >
+            X
+          </a>
+          <a
+            href="https://qiita.com/bariboyama"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-600 hover:text-gray-900 transition-colors text-sm font-medium"
+          >
+            Qiita
+          </a>
         </div>
       </div>
     </section>

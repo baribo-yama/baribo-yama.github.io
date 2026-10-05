@@ -1,4 +1,5 @@
 import SectionTitle from "../common/SectionTitle";
+import NewBadge from "../common/NewBadge";
 import { useState } from "react";
 import type { Work } from "../../types/profile";
 import worksData from "../../data/works.json";
@@ -38,8 +39,9 @@ export default function Works() {
                 key={index}
                 className="bg-white  rounded-md p-6 shadow-sm hover:shadow-lg transition-shadow"
               >
-                <h3 className="text-base font-semibold text-gray-900 mb-2">
+                <h3 className="text-base font-semibold text-gray-900 mb-2 flex items-center gap-2">
                   {work.title}
+                  {work.new && <NewBadge />}
                 </h3>
                 <p className="text-gray-600 text-sm mb-4 leading-relaxed">
                   {work.summary}
