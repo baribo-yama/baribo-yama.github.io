@@ -1,8 +1,9 @@
+import SectionTitle from "../common/SectionTitle";
 export default function Contact() {
   return (
     <section className="py-16 md:py-20 bg-white">
       <div className="max-w-3xl mx-auto px-4 md:px-8 text-center">
-        <h2 className="text-2xl font-semibold text-gray-900 mb-4">SNS</h2>
+        <SectionTitle className="mb-4">SNS</SectionTitle>
         <p className="text-gray-600 mb-8">お気軽にご連絡ください。</p>
         <div className="flex flex-col sm:flex-row gap-6 justify-center">
           <a

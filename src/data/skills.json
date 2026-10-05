@@ -3,7 +3,8 @@
     "category": "言語",
     "items": [
       { "name": "TypeScript" },
-      { "name": "HTML / CSS" },
+      { "name": "HTML" },
+      { "name": "CSS" },
       { "name": "JavaScript" },
       { "name": "PHP" },
       { "name": "Python" },
@@ -11,24 +12,38 @@
     ]
   },
   {
-    "category": "フレームワーク",
+    "category": "ライブラリ・フレームワーク",
     "items": [
       { "name": "React" },
       { "name": "Tailwind CSS" },
       { "name": "Laravel" },
       { "name": "Flask" },
       { "name": "FastAPI" },
-      { "name": "Ktor" }
+      { "name": "Ktor" },
+      { "name": "Angular" }
+    ]
+  },
+  {
+    "category": "DB",
+    "items": [
+      { "name": "MySQL" },
+      { "name": "MariaDB" },
+      { "name": "PostgreSQL" }
     ]
   },
   {
     "category": "ツール・インフラ",
     "items": [
-      { "name": "Vite" },
+      { "name": "Notion" },
       { "name": "Git / GitHub" },
-      { "name": "npm" },
-      { "name": "MySQL" },
-      { "name": "PostgreSQL" }
+      { "name": "Obsidian" },
+      { "name": "FireBase" },
+      { "name": "さくらVPS" },
+      { "name": "Docker" },
+      { "name": "Nginx" },
+      { "name": "WSL / Ubuntu" },
+      { "name": "Slack" },
+      { "name": "Miro" }
     ]
   }
 ]

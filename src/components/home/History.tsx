@@ -1,3 +1,4 @@
+import SectionTitle from '../common/SectionTitle'
 import type { HistoryItem } from '../../types/profile'
 import historyData from '../../data/history.json'
 
@@ -7,7 +8,7 @@ export default function History() {
   return (
     <section className="py-16 md:py-20 bg-white border-b border-gray-400">
       <div className="max-w-3xl mx-auto px-4 md:px-8">
-        <h2 className="text-2xl font-semibold text-gray-900 mb-10">History</h2>
+        <SectionTitle>History</SectionTitle>
         <ol className="relative pl-6 border-l border-gray-400">
           {history.map((item) => (
             // 各項目を relative にし、ドットを項目ごとに縦線上へ配置する
