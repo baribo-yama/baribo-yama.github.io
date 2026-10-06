@@ -3,9 +3,9 @@
     "title": "Portfolio Blog",
     "new": false,
     "summary": "このサイト。React + TypeScript + Vite + Tailwind CSS で構築したポートフォリオサイト。",
-    "background": "エンジニア志望者として、バックエンドの視点を持ったポートフォリオを構築したいと考え、Markdown記事管理とビルド時SSG化を実装。",
-    "responsibility": "フロントエンド全般、ビルドパイプライン設計、記事管理システム",
-    "ingenuity": "静的サイトであり、動的に変化させるような機能も少ないためAstroに乗り換え予定",
+    "background": "シンプルで見やすい自分のサイトが欲しいという思いで制作。記事を自由に書きたかったのでブログ機能もつけた。",
+    "responsibility": "",
+    "ingenuity": "Astroに乗り換え予定。カラーパレットはさるわかというサイトを参考にした（好きなので）",
     "tech": ["React", "TypeScript", "Vite", "Tailwind CSS"],
     "github": "https://github.com/baribo-yama/portfolio_blog"
   },
