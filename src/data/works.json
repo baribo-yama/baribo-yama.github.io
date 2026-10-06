@@ -5,7 +5,7 @@
     "summary": "このサイト。React + TypeScript + Vite + Tailwind CSS で構築したポートフォリオサイト。",
     "background": "シンプルで見やすい自分のサイトが欲しいという思いで制作。記事を自由に書きたかったのでブログ機能もつけた。",
     "responsibility": "",
-    "ingenuity": "Astroに乗り換え予定。カラーパレットはさるわかというサイトを参考にした（好きなので）",
+    "ingenuity": "Astroに乗り換え予定。カラーパレットはさるわかというサイトを参考にした。",
     "tech": ["React", "TypeScript", "Vite", "Tailwind CSS"],
     "github": "https://github.com/baribo-yama/portfolio_blog"
   },
